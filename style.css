@@ -1,6 +1,5 @@
 /* NOTE: You DON'T have to make any changes to the CSS */
 
-
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -20,6 +19,9 @@ body {
 	font-family: system-ui, sans-serif;
 	font-size: 1.5em;
 }
+
+
+
 
 
 /* Typography
@@ -141,9 +143,12 @@ figure {
 }
 
 figure img {
+  
+  
 	display: block;
 	width: 100%;
 	max-width: min-content;
+  height: 60%;
 	margin: 0 auto;
 }
 
@@ -167,6 +172,53 @@ blockquote {
 	position: relative;
 	background: #ededed;
 }
+
+@media (max-width: 1023px) {
+  body {
+		display: block;
+	}
+	nav {
+		display: none;
+	}
+	section {
+		padding: 0.5em;
+	}
+	figure {
+		margin: 0;
+	}
+	figure iframe {
+		width: 100%;
+	}
+	figure img {
+		width: 100%;
+	}
+  
+}
+
+@media (max-width: 767px) {
+  body {
+		display: block;
+	}
+	nav {
+		display: none;
+	}
+	section {
+		padding: 0.5em;
+	}
+	figure {
+		margin: 0;
+	}
+	figure iframe {
+		width: 100%;
+	}
+	figure img {
+		width: 100%;
+	} 
+}
+
+
+
+
 
 
 /* Media Queries
